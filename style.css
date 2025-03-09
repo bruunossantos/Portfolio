@@ -376,4 +376,61 @@ footer .line-footer p a:hover {
         font-size: 18px;
 
     }
+
+    /* ESTILO DO SOBRE */
+
+    section.sobre {
+        padding: 50px 8%;
+    }
+    
+    section.sobre .flex {
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* POR ONDE PASSEI */
+
+    section.trabalhos {
+        padding: 50px 8%;
+    }
+    
+    section.trabalhos .flex {
+        gap: 10px;
+    }
+    
+    .trabalhos .trabalhos-box {
+        margin: 50px 0px;
+        padding: 25px;
+
+    }
+    
+    .trabalhos .txt-trabalhos h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    /* RODAPÉ */
+
+    footer .flex{
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
 }
