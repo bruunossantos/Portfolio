@@ -1,8 +1,9 @@
 /* ESTILO GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*Garante que os itens fiquem dentro do quadro*/
+    box-sizing: border-box;
+    /*Garante que os itens fiquem dentro do quadro*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -11,16 +12,17 @@ body {
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
-    margin: 0 auto; /*Mantem centralizado na página*/
+    margin: 0 auto;
+    /*Mantem centralizado na página*/
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-contato button{
+.btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
@@ -36,13 +38,13 @@ button:hover {
     transform: scale(1.05);
 }
 
-h2.titulo{
+h2.titulo {
     color: #fff;
     font-size: 38px;
     text-align: center;
 }
 
-h2.titulo span{
+h2.titulo span {
     color: #2ccf7f;
 }
 
@@ -52,16 +54,17 @@ header {
     padding: 40px 4%;
 }
 
-header > .interface {
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
+header a {
     color: #7d7d7d;
     text-decoration: none;
-    display: inline-block; /*Faz com que o link tenha as propriedade Bloxk também, sendo possivel aplicar alguns estilos como o transform no hover*/
+    display: inline-block;
+    /*Faz com que o link tenha as propriedade Bloxk também, sendo possivel aplicar alguns estilos como o transform no hover*/
     transition: .2s;
 
 }
@@ -72,7 +75,8 @@ header a:hover {
 }
 
 header nav ul {
-    list-style-type: none; /*Retira a marcação dos ul*/
+    list-style-type: none;
+    /*Retira a marcação dos ul*/
 }
 
 header nav ul li {
@@ -82,96 +86,103 @@ header nav ul li {
 
 /* ESTILO DO BANNER */
 
-section.topo-do-site{
+section.topo-do-site {
     padding: 40px 4%;
 }
 
-section.topo-do-site .flex{
+section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
-    gap: 90px; /*Serve para dar um respiro entre os elementos*/
+    gap: 90px;
+    /*Serve para dar um respiro entre os elementos*/
 }
 
-.topo-do-site h1{
+.topo-do-site h1 {
     color: #2ccf7f;
     font-size: 18px;
-    line-height: 40px; /*Serve para diminuir o espaçamento entre linhas*/
+    line-height: 40px;
+    /*Serve para diminuir o espaçamento entre linhas*/
 }
 
-.topo-do-site .txt-topo-site h1 span{
-    color:#fff;
+.topo-do-site .txt-topo-site h1 span {
+    color: #fff;
     font-size: 42px;
 }
 
-.topo-do-site .txt-topo-site p{
+.topo-do-site .txt-topo-site p {
     color: #fff;
     margin: 40px 0px;
 }
 
-.topo-do-site .img-topo-site img{
+.topo-do-site .img-topo-site img {
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate; /*Chama a animação "flutuar", dura por 2 segundos, ela vai começar suave e terminar suave, infinitamente*/
+    animation: flutuar 2s ease-in-out infinite alternate;
+    /*Chama a animação "flutuar", dura por 2 segundos, ela vai começar suave e terminar suave, infinitamente*/
 }
 
-@keyframes flutuar{
-    0%{
+@keyframes flutuar {
+    0% {
         top: 0;
     }
-    100%{
+
+    100% {
         top: 30px;
     }
 }
 
 /* ESTILO  DAS ESPECIALIDADES */
 
-section.especialidades{
+section.especialidades {
     padding: 40px 4%;
 }
 
-section.especialidades .interface{
+section.especialidades .interface {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-section.especialidades .flex{
-    gap: 60px; /*Aplica espaçamento entre as especialidades*/
+section.especialidades .flex {
+    gap: 60px;
+    /*Aplica espaçamento entre as especialidades*/
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box {
     color: #fff;
     padding: 40px;
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
+    text-align: center;
 }
 
-.especialidades .especialidades-box:hover{
+.especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px #ffffff78;
 }
 
-.especialidades .especialidades-box i{
+.especialidades .especialidades-box i {
     font-size: 70px;
     color: #2ccf7f;
     margin-bottom: 0;
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box h3 {
     font-size: 26px;
     margin: 15px 0;
 }
 
-.especialidades .especialidades-box p{
+.especialidades .especialidades-box p {
     font-size: 13px;
 }
 
-.especialidades .btn-especialidade{
+.especialidades .btn-especialidade {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza horizontalmente */
     margin-top: 50px;
 }
 
-.especialidades .btn-especialidade button{
+.especialidades .btn-especialidade button {
     padding: 10px 120px;
     font-size: 18px;
     font-weight: 600;
@@ -185,35 +196,36 @@ section.especialidades .flex{
 
 /* ESTILO DO SOBRE */
 
-section.sobre{
+section.sobre {
     padding: 50px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
-.sobre .txt-sobre{
+
+.sobre .txt-sobre {
     color: #fff;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span{
+.sobre .txt-sobre h2 span {
     color: #2ccf7f;
     display: block;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 30px;
@@ -226,40 +238,142 @@ section.sobre .flex{
 }
 
 .btn-social a {
-    text-decoration: none;    /* Remove sublinhado dos links */
+    text-decoration: none;
+    /* Remove sublinhado dos links */
 }
 
 /* POR ONDE PASSEI */
 
-section.trabalhos{
+section.trabalhos {
     padding: 50px 4%;
 }
 
-section.trabalhos .flex{
+section.trabalhos .flex {
     align-items: center;
     gap: 60px;
 }
 
-.trabalhos .trabalhos-box{
+.trabalhos .trabalhos-box {
     margin: 40px;
     padding: 30px;
     background-color: #0c0c0c;
+    border: 1px solid #0c0c0c;
     border-radius: 10px;
+    transition: .2s;
 }
 
-.trabalhos .txt-trabalhos{
+.trabalhos .trabalhos-box:hover {
+    border: 1px solid #2ccf7f;
+}
+
+.trabalhos .txt-trabalhos {
     color: #fff;
 }
 
-.trabalhos .txt-trabalhos h3{
+.trabalhos .txt-trabalhos h3 {
     margin-bottom: 20px;
     font-size: 35px;
 }
 
-.trabalhos .txt-trabalhos p{
+.trabalhos .txt-trabalhos p {
     color: #fff;
+    text-align: justify;
 }
 
-.trabalhos img{
+.trabalhos img {
     align-items: center;
+}
+
+/* ESTILO DO FOOTER */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #2ccf7f;
+}
+
+footer .line-footer p i {
+    color: #2ccf7f;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .line-footer p a:hover {
+    color: #696969;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+
+    .interface {
+        max-width: 1020px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 35px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 20px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 18px;
+    }
+
+    .topo-do-site .txt-topo-site h1 span {
+        font-size: 32px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESTILO  DAS ESPECIALIDADES */
+
+    section.especialidades {
+        padding: 40px 8%;
+    }
+
+    .especialidades .btn-especialidade button {
+        padding: 15px 40px;
+        font-size: 18px;
+
+    }
 }
