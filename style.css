@@ -238,70 +238,6 @@ section.conhecimentos {
     margin-top: 15px;
   }
 
-/* ESTILO  DAS ESPECIALIDADES */
-
-section.especialidades {
-    padding: 40px 4%;
-}
-
-section.especialidades .interface {
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-section.especialidades .flex {
-    gap: 60px;
-    /*Aplica espaçamento entre as especialidades*/
-}
-
-.especialidades .especialidades-box {
-    color: #fff;
-    padding: 40px;
-    margin-top: 45px;
-    border-radius: 20px;
-    transition: .2s;
-    text-align: center;
-}
-
-.especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #ffffff78;
-}
-
-.especialidades .especialidades-box i {
-    font-size: 70px;
-    color: #2ccf7f;
-    margin-bottom: 0;
-}
-
-.especialidades .especialidades-box h3 {
-    font-size: 26px;
-    margin: 15px 0;
-}
-
-.especialidades .especialidades-box p {
-    font-size: 13px;
-}
-
-.especialidades .btn-especialidade {
-    display: flex;
-    justify-content: center;
-    /* Centraliza horizontalmente */
-    margin-top: 50px;
-}
-
-.especialidades .btn-especialidade button {
-    padding: 10px 120px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #2ccf7f;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
-
-}
-
 /* ESTILO DO SOBRE */
 
 section.sobre {
@@ -485,23 +421,6 @@ footer .line-footer p a:hover {
 
     .conhecimentos .cards-conhecimentos .card {
         margin: 10px;
-    }
-
-
-    /* ESTILO  DAS ESPECIALIDADES */
-
-    section.especialidades {
-        padding: 40px 8%;
-    }
-
-    .especialidades .btn-especialidade button {
-        padding: 15px 40px;
-        font-size: 18px;
-    }
-
-    section.especialidades .flex {
-        gap: 10px;
-        /*Aplica espaçamento entre as especialidades*/
     }
 
     /* ESTILO DO SOBRE */
