@@ -200,6 +200,44 @@ section.topo-do-site .flex {
     }
 }
 
+/* ESTILO DOS CONHECIMENTOS*/
+
+section.conhecimentos {
+    padding: 50px 4%;
+  }
+
+.conhecimentos .cards-conhecimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conhecimentos .cards-conhecimentos .card {
+    margin: 20px 30px;
+  }
+
+  .cards-conhecimentos .logo-card {
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 100px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .cards-conhecimentos .logo-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .conhecimentos .cards-conhecimentos .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .conhecimentos .cards-conhecimentos .card p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+  }
+
 /* ESTILO  DAS ESPECIALIDADES */
 
 section.especialidades {
@@ -438,6 +476,17 @@ footer .line-footer p a:hover {
     .topo-do-site .img-topo-site img {
         width: 100%;
     }
+
+    /* ESTILO DOS CONHECIMENTOS*/
+
+    .conhecimentos .cards-conhecimentos {
+        justify-content: center;
+    }
+
+    .conhecimentos .cards-conhecimentos .card {
+        margin: 10px;
+    }
+
 
     /* ESTILO  DAS ESPECIALIDADES */
 
