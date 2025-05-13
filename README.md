@@ -6,7 +6,7 @@ Apresento aqui meus principais projetos, habilidades e formas de contato profiss
 
 📎 [Clique aqui para ver o portfólio publicado](http://bruunossantos.github.io/Portfolio)
 
-<br/>
+
 ## 🛠️ Tecnologias Utilizadas
 
 <img 
