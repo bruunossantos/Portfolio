@@ -1,0 +1,490 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*Garante que os itens fiquem dentro do quadro*/
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+    /*Mantem centralizado na página*/
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #2ccf7f;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #2ccf80;
+    transform: scale(1.05);
+}
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #2ccf7f;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 40px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    /*Faz com que o link tenha as propriedade Bloxk também, sendo possivel aplicar alguns estilos como o transform no hover*/
+    transition: .2s;
+
+}
+
+header nav.menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+    /*Retira a marcação dos ul*/
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+.btn-abrir-menu {
+    display: none;
+}
+
+/* ESTILO DO MENU MOBILE */
+
+.btn-abrir-menu i{
+    color: #2ccf7f;
+    font-size: 40px;
+}
+
+.menu-mobile{
+    background-color: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu{
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu{
+    display: block;
+}
+
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i{
+    color: #2ccf7f;
+    font-size: 30px;
+
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block; /*Faz o hover background tomar todo*/
+}
+
+.menu-mobile nav ul li a:hover{
+    background-color: #2ccf7f;
+    color: #000;
+    font-weight:500;
+}
+
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+/* ESTILO DO BANNER */
+
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    /*Serve para dar um respiro entre os elementos*/
+}
+
+.topo-do-site h1 {
+    color: #2ccf7f;
+    font-size: 18px;
+    line-height: 40px;
+    /*Serve para diminuir o espaçamento entre linhas*/
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #fff;
+    font-size: 42px;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    /*Chama a animação "flutuar", dura por 2 segundos, ela vai começar suave e terminar suave, infinitamente*/
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.topo-do-site button i {
+    margin-right: 10px;
+}
+
+/* ESTILO DOS CONHECIMENTOS*/
+
+section.conhecimentos {
+    padding: 50px 4%;
+  }
+
+.conhecimentos h2 {
+    margin-bottom: 30px;
+}
+
+.conhecimentos .cards-conhecimentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .conhecimentos .cards-conhecimentos .card {
+    margin: 20px 30px;
+  }
+
+  .cards-conhecimentos .logo-card {
+    background-color: #0c0c0c;
+    padding: 20px;
+    border-radius: 100px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .cards-conhecimentos .logo-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .conhecimentos .cards-conhecimentos .card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .conhecimentos .cards-conhecimentos .card p {
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+/* ESTILO DO SOBRE */
+
+section.sobre {
+    padding: 50px 4%;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #2ccf7f;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #2ccf7f;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+.btn-social a {
+    text-decoration: none;
+    /* Remove sublinhado dos links */
+}
+
+/* POR ONDE PASSEI */
+
+section.trabalhos {
+    padding: 50px 4%;
+}
+
+section.trabalhos .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.trabalhos .trabalhos-box {
+    margin: 40px;
+    padding: 30px;
+    background-color: #0c0c0c;
+    border: 1px solid #0c0c0c;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.trabalhos .trabalhos-box:hover {
+    border: 1px solid #2ccf7f;
+}
+
+.trabalhos .txt-trabalhos {
+    color: #fff;
+}
+
+.trabalhos .txt-trabalhos h3 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.trabalhos .txt-trabalhos p {
+    color: #fff;
+    text-align: justify;
+}
+
+.trabalhos img {
+    align-items: center;
+}
+
+/* ESTILO DO FOOTER */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #2ccf7f;
+}
+
+footer .line-footer p i {
+    color: #2ccf7f;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+footer .line-footer p a:hover {
+    color: #696969;
+}
+
+@media screen and (max-width: 1020px) {
+
+    /* CLASSES GERAIS */
+
+    .interface {
+        max-width: 1020px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 34px;
+        line-height: 35px;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+    }
+
+
+
+    /* TOPO DO SITE */
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 20px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 18px;
+    }
+
+    .topo-do-site .txt-topo-site h1 span {
+        font-size: 32px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* ESTILO DOS CONHECIMENTOS*/
+
+    .conhecimentos .cards-conhecimentos {
+        justify-content: center;
+    }
+
+    .conhecimentos .cards-conhecimentos .card {
+        margin: 10px;
+    }
+
+    /* ESTILO DO SOBRE */
+
+    section.sobre {
+        padding: 50px 8%;
+    }
+    
+    section.sobre .flex {
+        align-items: center;
+        gap: 60px;
+    }
+    
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* POR ONDE PASSEI */
+
+    section.trabalhos {
+        padding: 50px 8%;
+    }
+    
+    section.trabalhos .flex {
+        gap: 10px;
+    }
+    
+    .trabalhos .trabalhos-box {
+        margin: 50px 0px;
+        padding: 25px;
+
+    }
+    
+    .trabalhos .txt-trabalhos h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    /* RODAPÉ */
+
+    footer .flex{
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+}
