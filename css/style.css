@@ -246,6 +246,93 @@ section.conhecimentos {
     margin-top: 15px;
   }
 
+/* ESTILO DOS PROJETOS*/
+
+section.projetos {
+    padding: 50px 4%;
+}
+
+section.projetos .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.projetos .projeto-card {
+    background-color: #0c0c0c;
+    padding: 50px;
+    border-radius: 15px;
+    margin-top: 30PX;
+    border: 2px solid #0e1011;
+}
+
+.projetos .conteudo-projeto h3{
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 15px;
+    cursor: default;
+}
+
+.projetos .conteudo-projeto p{
+    font-size: 14px;
+    color: #e6e6e6;
+    padding: 10px 0px;
+    cursor: default;
+}
+
+.projetos .tag {
+    padding: 2px 15px;
+    margin: 2px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 500;
+    display: inline-block;
+    cursor: default;
+}
+
+.projetos .tag.html {
+    background-color: #e34c26;
+}
+
+.projetos .tag.css {
+    background-color: #264de4;
+}
+
+.projetos .tag.javascript {
+    background-color: #ffde59;
+    color: #0c0c0c;
+}
+
+.projetos .img-projeto img {
+    border-radius: 15px;
+}
+
+.projetos .flex-button{
+    display: flex;
+}
+
+.flex-button a {
+    text-decoration: none;
+}
+
+.projetos button {
+    padding: 5px 20px;
+    margin: 20px 10px;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: #2ccf7f;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    display: flex;
+    color: #0e1011;
+}
+
+.projetos button i {
+    margin-right: 10px;
+}
+
 /* ESTILO DO SOBRE */
 
 section.sobre {
