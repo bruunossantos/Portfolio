@@ -277,10 +277,11 @@ section.projetos .flex {
 }
 
 .projetos .conteudo-projeto p{
-    font-size: 14px;
+    font-size: 15px;
     color: #e6e6e6;
     padding: 10px 0px;
     cursor: default;
+    text-align: justify;
 }
 
 .projetos .tag {
@@ -288,7 +289,7 @@ section.projetos .flex {
     margin: 2px;
     border-radius: 10px;
     color: #ffffff;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 500;
     display: inline-block;
     cursor: default;
@@ -581,6 +582,10 @@ footer .line-footer p a:hover {
     .projetos .conteudo-projeto p {
         font-size: 15px;
         margin: 0 0 20px 0;
+    }
+
+    .projetos .conteudo-projeto .tag{
+        font-size: 11px;
     }
     
     .projetos .img-projeto img {
