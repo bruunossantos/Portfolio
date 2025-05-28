@@ -303,6 +303,18 @@ section.projetos .flex {
     color: #0c0c0c;
 }
 
+.projetos .tag.wordpress {
+    background-color: #34749a;
+}
+
+.projetos .tag.elementor {
+    background-color: #88103a;
+}
+
+.projetos .tag.php {
+    background-color: #8183b5;
+}
+
 .projetos .img-projeto img {
     border-radius: 15px;
 }
