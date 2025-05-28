@@ -349,6 +349,37 @@ section.projetos .flex {
     margin-right: 10px;
 }
 
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important; 
+}
+
+.swiper-button-next i,
+.swiper-button-prev i {
+    font-size: 36px;
+    color: #2ccf80; 
+}
+
+.swiper-button-next i:hover,
+.swiper-button-prev i:hover {
+    color: #0aa158;
+    transition: .2s;
+}
+
+/* Cor dos bullets inativos */
+.swiper-pagination-bullet {
+    background-color: #f1f1f1 !important;
+    opacity: 0.5 !important;
+}
+
+/* Cor do bullet ativo */
+.swiper-pagination-bullet-active {
+    background-color: #2ccf80 !important;
+    opacity: 1 !important;
+}
+
+
+
 /* ESTILO DO SOBRE */
 
 section.sobre {
