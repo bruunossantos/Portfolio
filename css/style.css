@@ -581,7 +581,7 @@ footer .line-footer p a:hover {
 
     .projetos .conteudo-projeto p {
         font-size: 15px;
-        margin: 0 0 20px 0;
+        margin: 0 5px 20px 5px;
     }
 
     .projetos .conteudo-projeto .tag{
@@ -600,7 +600,7 @@ footer .line-footer p a:hover {
 
     .projetos button {
         margin: 10px;
-        padding: 8px 80px;
+        padding: 8px 50px;
     }
 
     .conteudo-projeto {
