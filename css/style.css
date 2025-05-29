@@ -229,7 +229,7 @@ section.conhecimentos {
   }
 
   .cards-conhecimentos .logo-card {
-    background-color: #1d1d1d;
+    background-color: #181818;
     padding: 20px;
     border-radius: 100px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -262,11 +262,11 @@ section.projetos .flex {
 }
 
 .projetos .projeto-card {
-    background-color: #1d1d1d;
+    background-color: #181818;
     padding: 50px;
     border-radius: 15px;
     margin-top: 30PX;
-    border: 2px solid #2e2e2e;
+    border: 2px solid rgb(49, 49, 49);
 }
 
 .projetos .conteudo-projeto h3{
@@ -441,7 +441,7 @@ section.trabalhos .flex {
 .trabalhos .trabalhos-box {
     margin: 40px;
     padding: 30px;
-    background-color: #1d1d1d;
+    background-color: #181818;
     border: 1px solid #0c0c0c;
     border-radius: 10px;
     transition: .2s;
