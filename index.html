@@ -1,375 +1,889 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruno S. Santos</title>
+    <link rel="stylesheet" href="src/style.css" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bruno Silva dos Santos</title>
-        <link rel="stylesheet" href="css/style.css" />
-        <script src="js/script.js" defer></script>
+    <!--SWIPER-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-        <!-- GOOGLE FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <!-- BOOTSTRAP ICONS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <!-- SWIPER CSS E JS -->
-        <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
-
-    </head>
-
-    <body>
-
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <!-- Div ScrollSmoother-->
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
         <header>
-            <div class="interface">
-                <div class="logo">
-                    <a href="index.html">
-                        <img src="img/logo.png" alt="Logo Do site">
-                    </a>
-                </div><!--Logo-->
-
-                <nav class="menu-desktop">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#especialidades">Conhecimentos</a></li>
-                        <li><a href="#projetos">Projetos</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                    </ul>
-                </nav>
-
-                <div class="btn-contato">
-                    <a href="#contato">
-                        <button>Contato</button>
-                    </a>
-                </div>
-
-                <div class="btn-abrir-menu" id="btn-menu">
-                    <i class="bi bi-list"></i>
-                </div>
-
-                <div class="menu-mobile" id="menu-mobile">
-                    <div class="btn-fechar">
-                        <i class="bi bi-x-lg"></i>
-                    </div>
-
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="especialidades.html">Conhecimentos</a></li>
-                            <li><a href="#sobre">Sobre</a></li>
-                            <li><a href="#">Projetos</a></li>
-                            <li><a href="#">Contato</a></li>
-                        </ul>
-                    </nav>
-
-                </div><!-- MENU-MOBILE -->
-
-                <div class="overlay-menu" id="overlay-menu">
-
-                </div>
-
-            </div><!--interface-->
+          <div class="interface">
+            <div class="logo">
+              <a href="index.html">
+                <img src="img/logo.webp" alt="Logo Do site" />
+              </a>
+            </div>
+            <!--Logo-->
+            <nav class="menu-desktop">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#">Experiência</a></li>
+                <li><a href="#">Contato</a></li>
+              </ul>
+            </nav>
+            <div class="btn-social">
+              <a
+                href="https://www.linkedin.com/in/bruno-silva-dos-santos-contato/"
+                target="_blank"
+                ><button><i class="bi bi-linkedin"></i></button>
+              </a>
+              <a
+                href="https://www.instagram.com/bruunossantos_"
+                target="_blank"
+              >
+                <button><i class="bi bi-instagram"></i></button>
+              </a>
+              <a href="https://github.com/bruunossantos" target="_blank"
+                ><button><i class="bi bi-github"></i></button>
+              </a>
+            </div>
+            <!-- btn-social -->
+          </div>
+          <!--interface-->
         </header>
 
         <main>
+          <section class="banner-section">
+            <div class="interface">
+              <picture data-speed=".5">
+                <source
+                media="(max-width: 600px)"
+                srcset="img/banner-1-bg-responsivo.webp"
+                />
+                <img src="img/bg_banner_c_pia.webp" alt="" />
+              </picture>
+              <picture>
+                <source
+                media="(max-width: 600px)"
+                srcset="img/banner-2-responsivo.webp"
+                />
+                <img src="img/banner-2.webp" class="bg" alt="" />
+              </picture>
+              <div class="txt-banner">
+                <h2>Olá! eu me chamo</h2>
+                <h1>Bruno Silva dos Santos</h1>
+              </div>
+            </div>
+            <!--interface-->
+          </section>
 
-            <section class="topo-do-site">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="txt-topo-site">
-                            <h1>Olá! Eu me chamo<br> <span>BRUNO SILVA DOS SANTOS</span></h1>
-                            <p>Seja muito bem-vindo ao meu portfólio pessoal! Aqui você poderá conhecer mais sobre mim, minhas habilidades e os projetos que desenvolvi.</p>
-                            <div class="btn-contato">
-                                <a href="Currículo Bruno Silva dos Santos.pdf" target="_blank">
-                                    <button>
-                                        <i class="bi bi-cloud-download-fill"></i>
-                                        Ver Curriculo
-                                    </button>
-                                </a>
-                            </div>
-                        </div><!--topo dite-->
-
-                        <div class="img-topo-site">
-                            <img src="img/img-bruno-banner.png" alt="Imagem de Bruno">
-                        </div><!--Imagem topo site-->
-                    </div>
-                </div> <!--interface-->
-            </section><!--topo-do-site-->
-
-            <section class="conhecimentos" id="especialidades">
-                <div class="interface">
-                    <h2 class="titulo">MEUS<span> CONHECIMENTOS</span></h2>
-                    <div class="cards-conhecimentos">
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/python-logo.png" alt="Logo Python">
-                            </div>
-                            <p>Python</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/django-logo.png" alt="Logo Python">
-                            </div>
-                            <p>Django</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/html-logo.png" alt="Logo Python">
-                            </div>
-                            <p>HTML</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/css-logo.png" alt="Logo Python">
-                            </div>
-                            <P>CSS</P>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/javascript-logo.png" alt="Logo JavaScript">
-                            </div>
-                            <P>JavaScript</P>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/canva-logo.png" alt="Logo Python">
-                            </div>
-                            <P>Canva</P>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/fireworks-logo.png" alt="Logo Python">
-                            </div>
-                            <p>FireWorks</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/wordpress-logo.png" alt="Logo Python">
-                            </div>
-                            <p>Wordpress</p>
-                        </div>
-
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/elementor-logo.png" alt="Logo Python">
-                            </div>
-                            <p>Elementor</p>
-                        </div>
-                        
-                        <div class="card">
-                            <div class="logo-card">
-                                <img src="img/woocommerce-logo.png" alt="Logo Python">
-                            </div>  
-                            <p>Woocommerce</p>
-                        </div>
-
-                    </div>
+          <section class="conhecimentos">
+            <div class="interface">
+              <div class="head-title">
+                <div class="title-target">
+                  <i class="bi bi-dot"></i>
+                  <h3>Conhecimentos</h3>
                 </div>
-            </section><!--conhecimento-->
+                <!--head-target-->
+                <h2>Competências <span>&</span> Habilidades</h2>
+                <p>
+                  Uma visão completa das minhas habilidades técnicas e
+                  comportamentais
+                </p>
+              </div>
+              <!--head-title-->
 
-            <section class="projetos" id="projetos">
-                <div class="interface">
-                    <h2 class="titulo">PROJETOS <span>DESENVOLVIDOS.</span></h2>
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-
-                            <!--PROJETO KANBAN-->
-                            <div class="swiper-slide">
-                                <div class="projeto-card">
-                        <div class="flex">
-                            <div class="conteudo-projeto">
-                                <h3>Projeto de Kanban</h3> 
-                                <span class="tag html">HTML</span>
-                                <span class="tag css">CSS</span>
-                                <span class="tag javascript">JavaScript</span>
-                                <p>Este é um projeto de quadro Kanban simples e interativo desenvolvido com HTML, CSS e JavaScript puro. Os cards podem ser arrastados entre colunas e também é possível adicionar novos cards com título, descrição e prioridade.</p>
-                                
-                                <div class="flex-button">
-                                <div class="btn-repositorio">
-                                    <a href="https://github.com/bruunossantos/Project-cards" target="_blank">
-                                        <button>
-                                            <i class="bi bi-github"></i>
-                                            Repositório
-                                        </button>
-                                    </a>
-                                </div>
-
-                                <div class="btn-ver-online">
-                                    <a href="https://bruunossantos.github.io/Project-cards/" target="_blank">
-                                        <button>
-                                            <i class="bi bi-link-45deg"></i>
-                                            Ver Online
-                                        </button>
-                                    </a>
-                                </div>
-                                </div>
-
-                            </div><!--conteudo-projeto-->
-                                
-                            <div class="img-projeto">
-                                <img src="img/project img/Kanban.png" alt="Imagem do Projeto Kanban">
-                            </div><!--img-projeto-->
-                        </div><!--flex-->
-                                </div><!--projeto-card-->
-                            </div><!--Swiper-slide-->
-
-                            <!--PROJETO SITE NOVA CAPITAL-->
-                            <div class="swiper-slide">
-                                <div class="projeto-card">
-                                    <div class="flex">
-                                        <div class="conteudo-projeto">
-                                            <h3>Site da Nova Capital</h3> 
-                                            <span class="tag wordpress">Wordpress</span>
-                                            <span class="tag elementor">Elementor</span>
-                                            <span class="tag php">PHP</span>
-                                            <p>Este site institucional foi desenvolvido em Wordpress com uso de Elementor para a empresa Nova Capital FIDC, para algumas integrações mais avançadas foi utilizado o PHP. O site contém formulários integrados com o CRM da empresa e pensado para estratégias de marketing.</p>
-                                            
-                                            <div class="flex-button">
-                                            <div class="btn-ver-online">
-                                                <a href="https://novacapitalsa.com.br/" 
-                                                target="_blank">
-                                                    <button>
-                                                        <i class="bi bi-link-45deg"></i>
-                                                        Ver Online
-                                                    </button>
-                                                </a>
-                                            </div>
-                                            </div>
-
-                                        </div><!--conteudo-projeto-->
-                                            
-                                        <div class="img-projeto">
-                                            <img src="img/project img/Site da Nova Capital.png" alt="Imagem do Projeto Kanban">
-                                        </div><!--img-projeto-->
-                                    </div><!--flex-->
-                                </div><!--projeto-card-->
-                            </div><!--Swiper-slide-->
-
-                            <!--PROJETO QR CODE GENERATOR-->
-                            <div class="swiper-slide">
-                                <div class="projeto-card">
-                                    <div class="flex">
-                                        <div class="conteudo-projeto">
-                                            <h3>Gerador de Qr Code</h3> 
-                                            <span class="tag html">HTML</span>
-                                            <span class="tag css">CSS</span>
-                                            <span class="tag javascript">JavaScript</span>
-                                            <p>Este gerador de QR Code foi desenvolvido como um trabalho de faculdade e permite transformar links em QR Codes de forma simples, rápida e intuitiva. Conta com validação de campos e opção para download do QR Code gerado.</p>
-                                            
-                                            <div class="flex-button">
-                                            <div class="btn-repositorio">
-                                                <a href="https://github.com/bruunossantos/QrCode-Generator" target="_blank">
-                                                    <button>
-                                                        <i class="bi bi-github"></i>
-                                                        Repositório
-                                                    </button>
-                                                </a>
-                                            </div>
-                                                        <div class="btn-ver-online">
-                                                <a href="https://bruunossantos.github.io/QrCode-Generator/" 
-                                                target="_blank">
-                                                    <button>
-                                                        <i class="bi bi-link-45deg"></i>
-                                                        Ver Online
-                                                    </button>
-                                                </a>
-                                            </div>
-                                            </div>
-
-                                        </div><!--conteudo-projeto-->
-                                            
-                                        <div class="img-projeto">
-                                            <img src="img/project img/QrCode Generator.png" alt="Imagem do Projeto Kanban">
-                                        </div><!--img-projeto-->
-                                    </div><!--flex-->
-                                </div><!--projeto-card-->
-                            </div><!--Swiper-slide-->
-
-                        </div><!--Swiper-wrapper-->
-
-                        <!-- Botões de navegação -->
-                        <div class="swiper-button-next"><i class="bi bi-caret-right-fill"></i></div>
-                        <div class="swiper-button-prev"><i class="bi bi-caret-left-fill"></i></div>
-
-                        <!-- Paginação -->
-                        <div class="swiper-pagination"></div>
-                    </div><!--Swiper-->
-                </div><!--interfacie-->
-            </section><!--projetos-->
-            
-            <section class="sobre" id="sobre">
-                <div class="interface">
-                    <div class="flex">
-                        <div class="img-sobre">
-                            <img src="img/bruno-sobre-mim.png" alt="Foto de Bruno">
-                        </div><!--img-sobre-->
-                        <div class="txt-sobre">
-                            <h2>SAIBA MAIS, <span>SOBRE QUEM SOU EU</span></h2>
-                            <p>Trabalhei por dois anos na assistencia social de Sapiranga onde realizava o atendimento com pessoas  de diferentes idades, De 2022 até 2024 trabalhei na mappnet com o desenvolvimento e criação de  websites para clientes, mas iniciei como helpdesk realizando o atendimento com os clientes pelo  whatsapp, onde eu era responsavel pela criação de artes para que eles postassem nas redes sociais e  demais serviços como auxilio em e-mails e contas</p>
-                            <p>Atualmente atuo como Analista de T.I na Nova  Capital FIDC, cuidando da infraestrutura interna e também de suporte ao usuário, além de realizar uma  parte do marketing (midias sociais)</p>
-                            <div class="btn-social">
-                                <a href="https://www.linkedin.com/in/bruno-silva-dos-santos-contato/" target="_blank"><button><i class="bi bi-linkedin"></i></button>
-                                </a>
-                                <a href="https://www.instagram.com/bruunossantos_" target="_blank">
-                                    <button><i class="bi bi-instagram"></i></button>
-                                </a>
-                                <a href="https://github.com/bruunossantos" target="_blank"><button><i class="bi bi-github"></i></button>
-                                </a>
-                            </div>
-                        </div><!--txt-sobre-->
+              <div class="flex-conhecimentos">
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/html-icon.webp" alt="HTML5" />
+                    <h3>HTML</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress html"></div>
                     </div>
-                </div><!--interface-->
-            </section><!--sobre-->
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
 
-            <section class="trabalhos">
-                <div class="interface">
-                    <h2 class="titulo">MINHAS <span>EXPERIÊNCIAS.</span></h2>
-                    <div class="trabalhos-box">
-                        <div class="flex">
-                            <div class="logo-trabalho">
-                                <img src="img/mappnet-logo.png" alt="">
-                            </div>
-                            <div class="txt-trabalhos">
-                                <h3>Mappnet</h3>
-                                <p>Iniciei na Mappnet em 2022 como Helpdesk (Suporte), neste período fiquei responsável por realizar atendimentos com os clientes via WhatsApp e atender suas demandas que consistiam em: realizar eventuais alterações no site desenvolvido, elaborar artes para mídias sociais conforme solicitação do cliente, realizar o treinamento em caso de e-commerce e auxiliar demais manutenções de domínio e email. Após um ano, passei a ser desenvolvedor, onde minha função era criar os sites com base no briefing do cliente.</p>
-                            </div>
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/CSS-icon.webp" alt="CSS" />
+                    <h3>CSS</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress css"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
 
-                        </div><!--flex-->
-                    </div><!--trabalhos-box-->
-                    <div class="trabalhos-box">
-                        <div class="flex">
-                            <div class="logo-trabalho">
-                                <img src="img/nova-capital-logo.png" alt="">
-                            </div>
-                            <div class="txt-trabalhos">
-                                <h3>Nova Capital</h3>
-                                <p>Iniciei na empresa em maio de 2024 como analista de T.I interno, uma área nova dentro da empresa na época. Minhas funções consistiam em auxiliar os cedentes que tivessem dificuldades e auxiliar na homologação de alguns cadastros, além de cuidar da infraestrutura interna da empresa toda. Além de auxiliar meus colegas com suas questões em relação à T.I também fui responsável pela criação das artes e postagens das redes sociais da empresa, assim como pela criação do novo site na época.</p>
-                            </div>
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/js-icon.webp" alt="JavaScript" />
+                    <h3>JavaScript</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress js"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
 
-                        </div><!--flex-->
-                    </div><!--trabalhos-box-->
-                </div><!--interface-->
-            </section><!--Trabalhos-->
-            
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/python_icon.webp" alt="Python" />
+                    <h3>Python</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress python"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
+
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/wordpress_icon.webp" alt="Wordpress" />
+                    <h3>Wordpress</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress wordpress"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
+
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/elementor_icon.webp" alt="Elementor" />
+                    <h3>Elementor</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress elementor"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
+
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/django_icon.webp" alt="Django" />
+                    <h3>Django</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress django"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
+
+                <div class="box-conhecimentos">
+                  <div class="topo-box">
+                    <img src="img/next_js_icon.webp" alt="NextJs" />
+                    <h3>Next Js</h3>
+                  </div>
+                  <!--topo-box-->
+                  <div class="progress-container">
+                    <p>Proeficiência</p>
+                    <div class="bar">
+                      <div class="progress next"></div>
+                    </div>
+                    <!--bar-->
+                  </div>
+                  <!--progress-container-->
+                </div>
+                <!--box-conhecimentos-->
+              </div>
+              <!--flex-conhecimentos-->
+            </div>
+            <!--interface-->
+          </section>
+
+          <section class="portfolio">
+            <div class="interface">
+              <div class="head-title">
+                <div class="title-target">
+                  <i class="bi bi-dot"></i>
+                  <h3>Portfólio</h3>
+                </div>
+                <!--head-target-->
+                <h2>Meus <span>projetos</span> desenvolvidos</h2>
+              </div>
+              <!--head-title-->
+
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card-projetos">
+                      <div class="img-projeto">
+                        <img
+                          src="img/Projetos/Site da Nova Capital.png"
+                          alt="Site Nova Capital"
+                        />
+                      </div>
+                      <div class="txt-projeto">
+                        <h3>Site da Nova Capital</h3>
+                        <p>
+                          Este site institucional foi desenvolvido em Wordpress
+                          com uso de Elementor para a empresa Nova Capital FIDC,
+                          para algumas integrações mais avançadas foi utilizado
+                          o PHP.
+                        </p>
+                        <div class="tags">
+                          <span class="wordpress">Wordpress</span>
+                          <span class="elementor">Elementor</span>
+                        </div>
+                        <!--tags-->
+                        <a href="https://novacapitalsa.com.br/" target="_blank" class="btn-projeto">
+                            Ver projeto Online <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                      </div>
+                      <!--txt-projeto-->
+                    </div>
+                    <!--card-projetos-->
+                  </div>
+                  <!--swiper-slide-->
+
+                  <div class="swiper-slide">
+                    <div class="card-projetos">
+                      <div class="img-projeto">
+                        <img src="img/Projetos/Kanban.jpg" alt="Site Kanban" />
+                      </div>
+                      <div class="txt-projeto">
+                        <h3>Projeto Kanban Interativo</h3>
+                        <p>
+                          Este é um projeto de quadro Kanban simples e
+                          interativo desenvolvido com HTML, CSS e JavaScript
+                          puro. Os cards podem ser arrastados entre colunas e
+                          também é possível adicionar novos cards com título,
+                          descrição e prioridade.
+                        </p>
+                        <div class="tags">
+                          <span class="html">HTML</span>
+                          <span class="css">CSS</span>
+                          <span class="js">JavaScript</span>
+                        </div>
+                        <!--tags-->
+                        <a href="https://bruunossantos.github.io/Project-cards/" target="_blank" class="btn-projeto">
+                            Ver projeto Online <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                      </div>
+                      <!--txt-projeto-->
+                    </div>
+                    <!--card-projetos-->
+                  </div>
+                  <!--swiper-slide-->
+
+                  <div class="swiper-slide">
+                    <div class="card-projetos">
+                      <div class="img-projeto">
+                        <img
+                          src="img/Projetos/qr-code-generator-page.png"
+                          alt="Qr Code generator"
+                        />
+                      </div>
+                      <div class="txt-projeto">
+                        <h3>Gerador QrCode</h3>
+                        <p>
+                          Este gerador de QR Code foi desenvolvido como um
+                          trabalho de faculdade e permite transformar links em
+                          QR Codes de forma simples, rápida e intuitiva...
+                        </p>
+                        <div class="tags">
+                          <span class="html">HTML</span>
+                          <span class="css">CSS</span>
+                          <span class="js">JavaScript</span>
+                        </div>
+                        <!--tags-->
+                        <a href="https://bruunossantos.github.io/QrCode-Generator/" target="_blank" class="btn-projeto">
+                            Ver projeto Online <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                      </div>
+                      <!--txt-projeto-->
+                    </div>
+                    <!--card-projetos-->
+                  </div>
+                  <!--swiper-slide-->
+
+                  <div class="swiper-slide">
+                    <div class="card-projetos">
+                      <div class="img-projeto">
+                        <img
+                          src="img/Projetos/plety-dev-website.jpg"
+                          alt="Site Plety Dev"
+                        />
+                      </div>
+                      <div class="txt-projeto">
+                        <h3>Site Plety Dev</h3>
+                        <p>texto aqui em breve...</p>
+                        <div class="tags">
+                          <span class="html">HTML</span>
+                          <span class="css">CSS</span>
+                          <span class="js">JavaScript</span>
+                        </div>
+                        <!--tags-->
+                        <a href="https://bruunossantos.github.io/PletyDev/" target="_blank" class="btn-projeto">
+                            Ver projeto Online <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                      </div>
+                      <!--txt-projeto-->
+                    </div>
+                    <!--card-projetos-->
+                  </div>
+                  <!--swiper-slide-->
+
+                  <div class="swiper-slide">
+                    <div class="card-projetos">
+                      <div class="img-projeto">
+                        <img
+                          src="img/Projetos/meu-guia-dev-page.jpg"
+                          alt="Site Meu Guia Dev Blog"
+                        />
+                      </div>
+                      <div class="txt-projeto">
+                        <h3>Blog do Meu Guia Dev</h3>
+                        <p>exto aqui em breve...</p>
+                        <div class="tags">
+                          <span class="wordpress">Wordpress</span>
+                          <span class="elementor">Elementor</span>
+                        </div>
+                        <!--tags-->
+                        <a href="https://meuguiadev.com.br/" target="_blank" class="btn-projeto">
+                            Ver projeto Online <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                      </div>
+                      <!--txt-projeto-->
+                    </div>
+                    <!--card-projetos-->
+                  </div>
+                  <!--swiper-slide-->
+
+                  <div class="swiper-slide">
+                    <div class="card-projetos">
+                      <div class="img-projeto">
+                        <img
+                          src="img/Projetos/speech-sistema-fonoaudiologo.jpg"
+                          alt="CRM para Fonoaudiólogos"
+                        />
+                      </div>
+                      <div class="txt-projeto">
+                        <h3>CRM para Fonoaudiólogos</h3>
+                        <p>Texto aqui em breve...</p>
+                        <div class="tags">
+                          <span class="python">Python</span>
+                          <span class="django">Django</span>
+                        </div>
+                        <!--tags-->
+                        <a href="https://github.com/bruunossantos/Speech-Sistema-de-Linguagem" target="_blank" class="btn-projeto">
+                            Ver projeto Online <i class="bi bi-box-arrow-right"></i>
+                        </a>
+                      </div>
+                      <!--txt-projeto-->
+                    </div>
+                    <!--card-projetos-->
+                  </div>
+                  <!--swiper-slide-->
+                </div>
+                <!--swiper-wrapper-->
+                <div class="swiper-pagination"></div>
+              </div>
+              <!--swiper-->
+            </div>
+            <!--interface-->
+          </section>
+
+          <section class="about-me">
+            <div class="interface">
+              <div class="flex">
+                <div class="img-about" data-speed="1" data-lag="0">
+                  <img
+                    src="img/Bruno-img-quem-somos_1x.webp"
+                    alt="Foto de Bruno"
+                  />
+                </div>
+                <!--img-sobre-->
+                <div class="txt-sobre">
+                  <div class="head-title">
+                    <div class="title-target">
+                      <i class="bi bi-dot"></i>
+                      <h3>Quem sou eu</h3>
+                    </div>
+                    <!--head-target-->
+                    <h2>Conheça mais <span>sobre mim</span></h2>
+                  </div>
+                  <!--head-title-->
+                  <p>
+                    Trabalhei por dois anos na assistencia social de Sapiranga
+                    onde realizava o atendimento com pessoas de diferentes
+                    idades, De 2022 até 2024 trabalhei na mappnet com o
+                    desenvolvimento e criação de websites para clientes, mas
+                    iniciei como helpdesk realizando o atendimento com os
+                    clientes pelo whatsapp, onde eu era responsavel pela criação
+                    de artes para que eles postassem nas redes sociais e demais
+                    serviços como auxilio em e-mails e contas<br /><br />
+                  </p>
+                  <p>
+                    Atualmente atuo como Analista de T.I na Nova Capital FIDC,
+                    cuidando da infraestrutura interna e também de suporte ao
+                    usuário, além de realizar uma parte do marketing (midias
+                    sociais)
+                  </p>
+
+                  <h3 class="soft-skill-title">Soft Skills</h3>
+                  <div class="grid-softskills">
+                    <div class="block-soft-skil">
+                      <div class="soft-skill-target">
+                        <i class="bi bi-dot"></i>
+                        <h4>Comunicação</h4>
+                      </div>
+                      <p>
+                        Capacidade de transmitir ideias de forma clara e eficaz
+                      </p>
+                    </div>
+
+                    <div class="block-soft-skil">
+                      <div class="soft-skill-target">
+                        <i class="bi bi-dot"></i>
+                        <h4>Trabalho em equipe</h4>
+                      </div>
+                      <p>Colaboração efetiva em projetos multidisciplinares</p>
+                    </div>
+
+                    <div class="block-soft-skil">
+                      <div class="soft-skill-target">
+                        <i class="bi bi-dot"></i>
+                        <h4>Organização</h4>
+                      </div>
+                      <p>Gestão eficiênte de tempo e recursos</p>
+                    </div>
+
+                    <div class="block-soft-skil">
+                      <div class="soft-skill-target">
+                        <i class="bi bi-dot"></i>
+                        <h4>Adaptabilidade</h4>
+                      </div>
+                      <p>Flexibilidade para se ajustar a novos contextos</p>
+                    </div>
+
+                    <div class="block-soft-skil">
+                      <div class="soft-skill-target">
+                        <i class="bi bi-dot"></i>
+                        <h4>Inteligência emocional</h4>
+                      </div>
+                      <p>Controle das emoções e empatia com os outros</p>
+                    </div>
+
+                    <div class="block-soft-skil">
+                      <div class="soft-skill-target">
+                        <i class="bi bi-dot"></i>
+                        <h4>Criatividade</h4>
+                      </div>
+                      <p>Idealização e desenvolvimento de ideias inovadoras</p>
+                    </div>
+                  </div>
+                  <!--softskills-block-->
+                </div>
+                <!--txt-sobre-->
+              </div>
+            </div>
+            <!--interface-->
+          </section>
+
+          <section class="experiencia">
+            <div class="interface">
+              <div class="head-title">
+                <div class="title-target">
+                  <i class="bi bi-dot"></i>
+                  <h3>Experiências</h3>
+                </div>
+                <!--head-target-->
+                <h2>Minhas Experiências <span>profissionais</span></h2>
+              </div>
+              <!--head-title-->
+              <div class="timeline-container">
+                <div class="timeline-line">
+                  <div class="timeline-progress"></div>
+                </div>
+                <!--timeline-line-->
+
+                <div class="timeline-item right item-mappnet">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2022 - 2024</div>
+                  <div class="timeline-card">
+                    <div class="topo-card">
+                      <i class="bi bi-dot"></i>
+                      <h3>Mappnet</h3>
+                    </div>
+                    <p>
+                      Iniciei na Mappnet em 2022 como Helpdesk (Suporte), neste
+                      período fiquei responsável por realizar atendimentos com
+                      os clientes via WhatsApp e atender suas demandas que
+                      consistiam em: realizar eventuais alterações no site
+                      desenvolvido, elaborar artes para mídias sociais conforme
+                      solicitação do cliente, realizar o treinamento em caso de
+                      e-commerce e auxiliar demais manutenções de domínio e
+                      email. Após um ano, passei a ser desenvolvedor, onde minha
+                      função era criar os sites com base no briefing do cliente.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="timeline-item left item-nova">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">2024 - Atual</div>
+                  <div class="timeline-card">
+                    <div class="topo-card">
+                      <i class="bi bi-dot"></i>
+                      <h3>Nova Capital FIDC</h3>
+                    </div>
+                    <p>
+                      Iniciei na empresa em maio de 2024 como analista de T.I
+                      interno, uma área nova dentro da empresa na época. Minhas
+                      funções consistiam em auxiliar os cedentes que tivessem
+                      dificuldades e auxiliar na homologação de alguns
+                      cadastros, além de cuidar da infraestrutura interna da
+                      empresa toda. Além de auxiliar meus colegas com suas
+                      questões em relação à T.I também fui responsável pela
+                      criação das artes e postagens das redes sociais da
+                      empresa, assim como pela criação do novo site na época.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--timeline-container-->
+            </div>
+            <!--interface-->
+          </section>
+
+          <section class="certificados">
+            <div class="interface">
+              <div class="head-title">
+                <div class="title-target">
+                  <i class="bi bi-dot"></i>
+                  <h3>Certificações</h3>
+                </div>
+                <!--head-target-->
+                <h2>Meus cursos e <span>certificados</span></h2>
+              </div>
+              <!--head-title-->
+              <div class="scroll-horizontal-container">
+                <div class="certified-wrapper">
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/cyber-security-certifiqued.webp"
+                        alt="Certificado de Curso completo em Cyber Security"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>Curso Completo em Cyber Security</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/udemy-logo-icon.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>Udemy.com</h5>
+                          <p>Stefan Sales</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Fevereiro de 2026</p>
+                      <a href="img/Certificados/PDF/curso-completo-em-cyber-security.pdf" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/python-certifiqued.webp"
+                        alt="Certificado de Python"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>Python 3 - Mundo 1 (Lógica)</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/curso-em-video-logo-icon.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>cursoemvideo.com</h5>
+                          <p>Curso em vídeo</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Maio de 2023</p>
+                      <a href="img/Certificados/PDF/Python 3 - Mundo 1 (Lógica).pdf" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/python-certifiqued.webp"
+                        alt="Certificado de Python"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>Python 3 - Mundo 2 (Estruturas)</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/curso-em-video-logo-icon.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>cursoemvideo.com</h5>
+                          <p>Curso em vídeo</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Maio de 2023</p>
+                      <a href="img/Certificados/PDF/Python 3 - Mundo 2 (Estruturas).pdf" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/python-certifiqued.webp"
+                        alt="Certificado de Python"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>Python 3 - Mundo 3 (Módulos & POO)</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/curso-em-video-logo-icon.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>cursoemvideo.com</h5>
+                          <p>Curso em vídeo</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Maio de 2023</p>
+                      <a href="img/Certificados/PDF/Python 3 - Mundo 3 (Módulos & POO).pdf" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/spanish-certifiqued.webp"
+                        alt="Certificado de Python"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>Curso de Espanhol (Intermediário)</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/prime-cursos-do-brasil-logo.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>primecursos.com.br</h5>
+                          <p>Prime Cursos do Brasil</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Maio de 2025</p>
+                      <a href="img/Certificados/PDF/Curso de Espanhol (Intermediário).jfif" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/git-github-certifiqued.webp"
+                        alt="Certificado de Python"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>Git e Github (20 horas)</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/curso-em-video-logo-icon.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>cursoemvideo.com</h5>
+                          <p>Curso em vídeo</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Fevereiro de 2024</p>
+                      <a href="img/Certificados/PDF/Git e Github (20 horas).pdf" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+
+                  <div class="certified-card">
+                    <div class="certified-img">
+                      <img
+                        src="img/Certificados/programacao-certified.webp"
+                        alt="Certificado de Python"
+                      />
+                    </div>
+                    <div class="certified-details">
+                      <h3>DevArt: Projetos de Alto Valor (Stranger Things)</h3>
+                      <div class="organization-card">
+                        <div class="organization-img">
+                          <img
+                            src="img/Certificados/gustavo-campelo-icon.webp"
+                            alt="Logo"
+                          />
+                        </div>
+                        <div class="organization-details">
+                          <h5>@gucampelo</h5>
+                          <p>Gustavo Campelo Costa</p>
+                        </div>
+                      </div>
+                      <p class="issue-date">Emitida em Março de 2026</p>
+                      <a href="img/Certificados/PDF/DevArt-Projetos de Alto Valor (Stranger Things).jfif" target="_blank" class="btn-cert"
+                        >Ver Certificado</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="contato">
+            <div class="interface">
+              <div class="head-title">
+                <div class="title-target">
+                  <i class="bi bi-dot"></i>
+                  <h3>contato</h3>
+                </div>
+                <!--head-target-->
+                <h2>Vamos <span>conversar?</span></h2>
+              </div>
+              <!--head-title-->
+              <div class="flex">
+                <div class="contato-info">
+                  <p>
+                    Sinta-se à vontade para me mandar uma mensagem. Seja para um
+                    projeto, uma proposta de trabalho ou apenas para trocarmos
+                    uma ideia sobre tecnologia!
+                  </p>
+                  <div class="social-link">
+                    <a
+                      href="https://www.linkedin.com/in/bruno-silva-dos-santos-contato/"
+                      target="_blank"
+                    >
+                      <div class="social-card">
+                        <i class="bi bi-linkedin"></i>
+                        <span>LinkedIn</span>
+                      </div>
+                    </a>
+
+                    <a href="https://github.com/bruunossantos" target="_blank">
+                      <div class="social-card">
+                        <i class="bi bi-github"></i>
+                        <span>GitHub</span>
+                      </div>
+                    </a>
+
+                    <a
+                      href="https://www.instagram.com/bruunossantos_"
+                      target="_blank"
+                    >
+                      <div class="social-card">
+                        <i class="bi bi-instagram"></i>
+                        <span>Instagram</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="form-container">
+                  <form action="">
+                    <input type="text" name="nome" placeholder="Seu nome completo" required>
+                    <input type="text" name="assunto" placeholder="Assunto da mensagem" required>
+                    <textarea name="conteudo" placeholder="Escreva sua mensagem aqui..." required></textarea>
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
         </main>
-
         <footer>
             <div class="inteface">
                 <div class="line-footer">
                     <div class="flex">
                         <div class="logo-footer">
-                            <img src="img/logo.png" alt="Logo do site">
+                            <img src="img/logo.webp" alt="Logo do site">
                         </div><!--logo-footer-->
                         <div class="btn-social">
                             <a href="https://www.linkedin.com/in/bruno-silva-dos-santos-contato/" target="_blank"><button><i class="bi bi-linkedin"></i></button>
@@ -383,11 +897,30 @@
                     </div><!--flex-->
                 </div><!--Line-footer-->
 
-                <div class="line-footer borda" id="contato">
+                <div class="line-footer borda">
                     <p><i class="bi bi-envelope-fill"></i> <a href="mailto:bruuneles@gmail.com">bruuneles@gmail.com</a></p>
                 </div><!--Line-footer-->
             </div><!--interface-->
         </footer>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </body>
+      </div>
+    </div>
+
+    <div id="preloader">
+        <svg width="623" height="210" viewBox="0 0 623 210" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M173.4 0.399902C201.1 0.399902 227.1 23.6999 227.1 45.6999L227.7 72.0999C228.9 75.5999 236.9 83.6999 240.4 83.6999H344.4C396.5 84.7999 417.3 105.6 417.3 142.6C417.3 168.1 409.2 193.5 368.7 205.1C362.9 206.2 353.7 209.7 350.2 209.7L200 210C234.1 197 241 168.9 245 156.5H339.8C349.1 154.2 356 146.1 356 139.2C356 123 334 125.3 328.3 125.3H243.9C225.4 125.3 208.1 123 191.9 113.7C168.8 102.2 166.6 80.3999 164.3 59.8999C165.1 53.3999 158.4 50.0999 152.6 50.0999H67L66.9 82.1999H141.2C145.8 82.1999 151.7 82.4999 159.5 78.9999C160.5 85.9999 161.8 88.2999 164.1 94.0999C180.3 127.3 218.2 130.5 236.9 131.9C238.7 142.6 237.5 140.6 238.1 147.3C243.3 182.7 206.9 209.7 173.4 209.7H0V0.399902H173.4ZM68.2 121.8V158.8H153.8C164.2 158.8 174 155.9 173.4 138C173.4 126.2 162.4 122.1 154.9 121.8H68.2Z" fill="#2CCF7F"/>
+        <path d="M616.1 0.400087C603.4 17.7001 589.5 36.2001 574.5 54.7001H440.4C430 57.1001 428.8 61.7001 428.8 68.6001C428.8 75.6001 433.4 83.7001 440.4 83.7001H547.9C592.9 84.8001 623 101 623 141.5C623 166.9 610.3 197 572.1 205.1C565.2 206.2 552.5 209.7 549 209.7H376.8C394.1 207.4 425.4 175 423 156.5H544.4C557.1 154.2 560.6 146.1 560.6 140.3C560.6 132.2 552.5 125.3 544.4 125.3H428.8C417.3 126.4 419.6 114.9 416.1 109.1C408 92.9001 390.7 86.0001 378 82.5001C375.6 82.5001 372.2 80.2001 368.7 79.0001C367.6 79.0001 366.4 77.9001 366.4 75.6001V54.7001C367.6 20.0001 413.8 -0.799913 441.5 0.400087H616.1Z" fill="white"/>
+        <path d="M243.6 54.6L360.6 54.7C361.2 39.3 376.8 13 413.5 0H200C232.8 19.5 233.3 44.6 233.8 57.5C238.4 56.3 239.3 54.5 243.6 54.6Z" fill="white"/>
+        </svg>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollSmoother requires ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/SplitText.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="src/script.js"></script>
+  </body>
 </html>
