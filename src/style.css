@@ -909,7 +909,7 @@ footer .line-footer p a:hover {
   }
 
   .banner-section picture img.bg {
-    width: 115% !important; 
+    width: 100% !important; 
     height: auto !important;
     bottom: 0;
     right: 50%; 
