@@ -24,7 +24,7 @@ mm.add({
     });
   }
 
-  // 2. CARROSSEL PORTFÓLIO (Certificados)
+  // 2. CARROSSEL Certificados
   let wrapper = document.querySelector(".certified-wrapper");
   if (wrapper) {
     gsap.to(wrapper, {
@@ -32,7 +32,7 @@ mm.add({
       ease: "none",
       scrollTrigger: {
         trigger: ".certificados",
-        start: isMobile ? "top 15%" : "top -25%", 
+        start: isMobile ? "top 5%" : "top -25%", 
         end: () => `+=${wrapper.scrollWidth * (isMobile ? 0.8 : 0.6)}`, 
         pin: true,
         scrub: 1,
