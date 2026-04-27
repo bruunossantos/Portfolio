@@ -42,7 +42,7 @@
 
 /* ESTILOS GERAIS */
 
-html, body {
+body {
   background-color: var(--bg-page);
   color: var(--font-color);
   width: 100%;
