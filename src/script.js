@@ -35,7 +35,7 @@ mm.add({
         start: isMobile ? "top -4%" : "top -25%", 
         end: () => `+=${wrapper.scrollWidth * (isMobile ? 0.8 : 0.6)}`, 
         pin: true,
-        scrub: 1,
+        scrub: 2,
         invalidateOnRefresh: true, 
       },
     });
