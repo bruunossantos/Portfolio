@@ -896,9 +896,18 @@ footer .line-footer p a:hover {
     display: none !important;
   }
 
+  .banner-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
   .banner-section picture img.bg {
-    width: 75vh !important;
-    height: auto !important;
+    width: 100% !important;
+    height: 100% !important;
     bottom: 0;
     right: 45%;
     transform: translateX(50%); 
