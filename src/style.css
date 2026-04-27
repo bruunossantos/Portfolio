@@ -907,11 +907,12 @@ footer .line-footer p a:hover {
 
   .banner-section picture img.bg {
     width: 100% !important;
-    height: 100% !important;
-    bottom: 0;
-    right: 45%;
-    transform: translateX(50%); 
-    object-fit: contain; /* Garante que a imagem não seja cortada */
+    height: 100% !important; 
+    object-fit: cover !important; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
   }
 
   .txt-banner {
