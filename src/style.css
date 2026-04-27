@@ -883,6 +883,7 @@ footer .line-footer p a:hover {
   .interface {
     max-width: 100%;
     padding: 1%;
+    overflow-x: hidden;
   }
 
   header {
@@ -899,7 +900,6 @@ footer .line-footer p a:hover {
     min-height: 100svh; 
     overflow: hidden; 
     position: relative;
-    overflow-x: hidden;
   }
 
   .banner-section picture:first-of-type img {
