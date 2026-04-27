@@ -3,8 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  outline: 1px solid red !important;
-  background: rgba(255, 0, 0, 0.05) !important;
+  outline: 5px solid red !important;
+  background: #FFF !important;
 }
 
 :root {
