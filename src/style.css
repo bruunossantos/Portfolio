@@ -42,9 +42,12 @@
 
 /* ESTILOS GERAIS */
 
-body {
+html, body {
   background-color: var(--bg-page);
   color: var(--font-color);
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
 }
 
 ::-webkit-scrollbar {
@@ -61,6 +64,8 @@ body {
 .interface {
   max-width: 1280px;
   margin: 0 auto;
+  width: 100%;
+  overflow: hidden;
 }
 
 .flex {
