@@ -32,7 +32,7 @@ mm.add({
       ease: "none",
       scrollTrigger: {
         trigger: ".certificados",
-        start: isMobile ? "top 5%" : "top -25%", 
+        start: isMobile ? "top -4%" : "top -25%", 
         end: () => `+=${wrapper.scrollWidth * (isMobile ? 0.8 : 0.6)}`, 
         pin: true,
         scrub: 1,
