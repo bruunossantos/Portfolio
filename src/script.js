@@ -7,36 +7,78 @@ ScrollSmoother.create({
 
 let mm = gsap.matchMedia();
 
-mm.add("(min-width: 601px)", () => {
-  ScrollTrigger.create({
-    trigger: ".about-me",
-    start: "top -50px",
-    end: "bottom 600px",
-    pin: ".img-about",
-    pinSpacing: false,
-    markers: false,
+mm.add({
+  isMobile: "(max-width: 600px)",
+  isDesktop: "(min-width: 601px)"
+}, (context) => {
+  let { isMobile } = context.conditions;
+
+  if (!isMobile) {
+    ScrollTrigger.create({
+      trigger: ".about-me",
+      start: "top -50px",
+      end: "bottom 600px",
+      pin: ".img-about",
+      pinSpacing: false,
+      markers: false,
+    });
+  }
+
+  // 2. CARROSSEL PORTFÓLIO (Certificados)
+  let wrapper = document.querySelector(".certified-wrapper");
+  if (wrapper) {
+    gsap.to(wrapper, {
+      x: () => -(wrapper.scrollWidth - window.innerWidth + (isMobile ? window.innerWidth * 0.1 : window.innerWidth * 0.08)), 
+      ease: "none",
+      scrollTrigger: {
+        trigger: ".certificados",
+        start: isMobile ? "top 15%" : "top -25%", 
+        end: () => `+=${wrapper.scrollWidth * (isMobile ? 0.8 : 0.6)}`, 
+        pin: true,
+        scrub: 1,
+        invalidateOnRefresh: true, 
+      },
+    });
+  }
+
+  // 3. ANIMAÇÃO DOS ITENS DA TIMELINE (Experiências)
+  const items = document.querySelectorAll(".timeline-item");
+  
+  items.forEach((item) => {
+    const card = item.querySelector(".timeline-card");
+    const dot = item.querySelector(".timeline-dot");
+
+    gsap.fromTo(
+      card,
+      { 
+        opacity: 0, 
+        x: isMobile ? -30 : (item.classList.contains("right") ? 50 : -50) 
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: item,
+          start: isMobile ? "top 70%" : "top 50%", // Começa mais cedo no mobile
+          end: isMobile ? "top 50%" : "top 30%",
+          scrub: 1,
+        },
+      }
+    );
+
+    // Efeito de brilho no dot quando ativo
+    gsap.to(dot, {
+      backgroundColor: "var(--primary-color)",
+      scrollTrigger: {
+        trigger: item,
+        start: "top center",
+        toggleActions: "play reverse play reverse",
+      },
+    });
   });
-});
 
-// Carrossel do portfólio
-
-let wrapper = document.querySelector(".certified-wrapper");
-
-gsap.to(wrapper, {
-  x: () =>
-    -(wrapper.scrollWidth - window.innerWidth + window.innerWidth * 0.08), 
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".certificados",
-    start: "top -25%", // Começa quando o topo da seção chega perto do topo da tela
-    end: () => `+=${wrapper.scrollWidth * 0.6}`, // Duração do scroll baseada no tamanho dos cards
-    pin: true, // "Trava" a seção na tela
-    scrub: 1, // Suavidade no movimento
-    invalidateOnRefresh: true, // Recalcula se redimensionar a tela
-  },
-});
-
-// Parte de experiências
+}); // Fim do MatchMedia
 
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
@@ -68,42 +110,6 @@ gsap.to(".timeline-progress", {
     scrub: true, 
   },
 });
-
-// Animação dos itens aparecendo
-const items = document.querySelectorAll(".timeline-item");
-
-items.forEach((item) => {
-  const card = item.querySelector(".timeline-card");
-  const dot = item.querySelector(".timeline-dot");
-
-  gsap.fromTo(
-    card,
-    { opacity: 0, x: item.classList.contains("right") ? 50 : -50 },
-    {
-      opacity: 1,
-      x: 0,
-      duration: 1,
-      scrollTrigger: {
-        trigger: item,
-        start: "top 50%",
-        end: "top 30%",
-        scrub: 1,
-      },
-    },
-  );
-
-  // Efeito de brilho no dot quando ativo
-  gsap.to(dot, {
-    backgroundColor: "var(--primary-color)",
-    scrollTrigger: {
-      trigger: item,
-      start: "top center",
-      toggleActions: "play reverse play reverse",
-    },
-  });
-});
-
-
 
 // PRELOADER
 const tl = gsap.timeline({
