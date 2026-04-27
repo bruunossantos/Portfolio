@@ -895,10 +895,9 @@ footer .line-footer p a:hover {
   }
 
   .banner-section {
-    min-height: 100vh;
-    min-height: 100svh; 
-    overflow: hidden; 
+    width: 100%; 
     position: relative;
+    overflow-x: hidden;
   }
 
   .banner-section picture:first-of-type img {
