@@ -64,7 +64,6 @@ html, body {
 .interface {
   max-width: 1280px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .flex {
@@ -895,56 +894,19 @@ footer .line-footer p a:hover {
     display: none !important;
   }
 
-  .banner-section {
-    height: 100vh; 
-    height: 100svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--bg-page);
-  }
-
-  .banner-section .interface {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .banner-section picture:first-of-type img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    z-index: 1;
-  }
-
   .banner-section picture img.bg {
-    position: absolute;
+    width: 75vh !important;
+    height: auto !important;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: auto !important;
-    height: 85% !important; 
-    max-width: none !important;
-    object-fit: contain !important;
-    z-index: 2;
+    right: 45%;
+    transform: translateX(50%); 
+    object-fit: contain; /* Garante que a imagem não seja cortada */
   }
 
-  /* Texto por cima de tudo */
   .txt-banner {
-    position: relative;
-    z-index: 10;
-    margin-top: 40vh !important; 
+    max-width: 100% !important;
+    margin-top: 60vh !important;
     text-align: center;
-    width: 100%;
-    padding: 0 20px;
   }
 
   .txt-banner h2 {
